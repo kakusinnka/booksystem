@@ -11,15 +11,16 @@
 <body>
     <div id="header"></div>
     <div class="container">
-        <h2>書名サンプル</h2>
-        <p><strong>著者:</strong> 著者サンプル</p>
-        <p><strong>出版日:</strong> 2023-04-01</p>
-        <p><strong>ISBN:</strong> 1234567890123</p>
-        <p><strong>概要:</strong> これはサンプル書籍についての本です。</p>
+        <h2 id="book-title">ローディング中...</h2>
+        <p><strong>著者:</strong> <span id="book-author">ローディング中...</span></p>
+        <p><strong>出版日:</strong> <span id="book-publish-date">ローディング中...</span></p>
+        <p><strong>ISBN:</strong> <span id="book-isbn">ローディング中...</span></p>
+        <p><strong>概要:</strong><span id="book-summary">ローディング中...</span></p>
         <button onclick="window.history.back();">戻る</button>
     </div>
     <div id="footer"></div>
     <script src="../../js/loadCommonContent.js"></script>
+    <script src="../../js/getBookById.js"></script>
 </body>
 
 </html>
