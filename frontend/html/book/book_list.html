@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>図書リスト</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container">
+        <h2>図書リスト</h2>
+        <input type="text" placeholder="書籍を検索...">
+        <table>
+            <thead>
+                <tr>
+                    <th>書名</th>
+                    <th>著者</th>
+                    <th>ISBN</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>書名サンプル</td>
+                    <td>著者サンプル</td>
+                    <td>1234567890123</td>
+                    <td class="actions">
+                        <button onclick="location.href='book_detail.html'">詳細</button>
+                        <button onclick="location.href='book_edit.html'">編集</button>
+                        <button>削除</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="footer"></div>
+    <script src="../../js/loadCommonContent.js"></script>
+</body>
+
+</html>

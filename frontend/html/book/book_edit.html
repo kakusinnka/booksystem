@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>図書を編集</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container">
+        <h2>図書を編集</h2>
+        <form>
+            <label for="title">書名:</label>
+            <input type="text" id="title" name="title" value="書名サンプル" required><br>
+            <label for="author">著者:</label>
+            <input type="text" id="author" name="author" value="著者サンプル" required><br>
+            <label for="publish_date">出版日:</label>
+            <input type="date" id="publish_date" name="publish_date" value="2023-04-01"><br>
+            <label for="isbn">ISBN:</label>
+            <input type="text" id="isbn" name="isbn" value="1234567890123"><br>
+            <label for="description">概要:</label>
+            <textarea id="description" name="description">これはサンプル書籍についての本です。</textarea><br>
+            <button type="submit">保存</button>
+        </form>
+    </div>
+    <div id="footer"></div>
+    <script src="../../js/loadCommonContent.js"></script>
+</body>
+
+</html>

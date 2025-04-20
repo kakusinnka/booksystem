@@ -1,0 +1,10 @@
+CREATE TABLE books (
+    id INT AUTO_INCREMENT PRIMARY KEY COMMENT '書籍ID',
+    title VARCHAR(255) NOT NULL COMMENT '書籍タイトル',
+    author VARCHAR(255) NOT NULL COMMENT '著者名',
+    publish_date DATE COMMENT '出版日',
+    isbn VARCHAR(13) COMMENT 'ISBNコード',
+    description TEXT COMMENT '書籍説明',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT 'レコード作成日時',
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'レコード最終更新日時'
+) COMMENT='書籍情報を格納するテーブル';
